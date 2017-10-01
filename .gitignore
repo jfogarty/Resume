@@ -1,0 +1,48 @@
+#########################
+#### GENERAL or ROOT ####
+#########################
+
+*.log
+*.old
+*.tmp
+rebuild.bash
+
+# Emacs temp files
+~*
+*~
+
+#SVN
+.svn
+*.svn-base
+*#
+
+#vim files
+.*.sw?
+.*~
+
+#Johns local notes
+*.jf.txt
+
+#############################
+#### LaTeX Intermediates ####
+#############################
+
+*.ain
+*.aux
+*.bbl
+*.blg
+*.ent
+*.html
+*.idx
+*.ilg
+*.ind
+*.lof
+*.los
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.xbb
+*.zip
+
+# - End.
