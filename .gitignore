@@ -23,6 +23,8 @@ rebuild.bash
 #Johns local notes
 *.jf.txt
 
+cover_letters/*
+
 #############################
 #### LaTeX Intermediates ####
 #############################
