@@ -24,6 +24,7 @@ rebuild.bash
 *.jf.txt
 
 cover_letters/*
+references/*
 
 #############################
 #### LaTeX Intermediates ####
