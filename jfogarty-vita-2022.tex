@@ -1,0 +1,208 @@
+%% ----------------------------------------------------------------------------
+%% LaTeX source of John Fogarty's Short Form VITA - MASTER LaTeX File
+%% ----------------------------------------------------------------------------
+% V0.15 - 15 Dec 2021
+% -----------------------------------------------------------------------------
+% John Fogarty - Web:http://www.jfogarty.org - Mail:johnhenryfogarty@gmail.com
+% -----------------------------------------------------------------------------
+% Heavily commented to to work for even LaTeX beginners (hopefully).
+% Forked from Cies Breijs' extremely useful https://github.com/cies/resume
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+% -----------------------------------------------------------------------------
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,letterpaper]{article}
+
+% Set the page margins.
+\usepackage[letterpaper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{./resume}
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{John H. Fogarty}{\textbf{Highlights Resume}}{Last update on \today}
+
+\nobreakvspace{1em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:john.at.jfogarty.dot.org}{john\mbox{}@\mbox{}jfogarty.org}\sbull
+\textsmaller{+}1.512-589-5550\sbull
+% {\newnums cies010} \emph{(Skype)}\sbull
+\href{https://github.com/jfogarty}{github.com/jfogarty}
+\sbull
+\href{http://www.linkedin.com/in/jfogarty}{www.linkedin.com/in/jfogarty}
+
+\nobreakvspace{1mm}  % add some page break averse vertical spacing
+\noindent
+Address: 14206 SE 10th Place\sbull
+Bellevue, WA\sbull
+98007
+\\
+\textbf{Full Long Form Resume is available at :}
+\href{https://github.com/jfogarty/Resume/raw/master/jfogarty-resume-2018.pdf}{https://github.com/jfogarty/Resume}
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+%%--------------------------------------------------------------------------------------
+%%--------------------------------------------------------------------------------------
+
+\roottitle{Objective}
+
+\inlineheadsection
+{A full time position as a hands on Software Developer}
+{}
+
+%%--------------------------------------------------------------------------------------
+%%--------------------------------------------------------------------------------------
+\vspace{1em}\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Proficiencies}
+
+\vspace{0.5em}
+\inlineheadsection
+{Programming Languages:}
+{C++, Python, Java, C\#, Node.js/JavaScript, MatLab}
+
+\vspace{0.5em}\inlineheadsection
+{Operating Systems:}
+{Linux, WIndows, assorted Unix and specialty systems}
+
+\vspace{0.5em}\inlineheadsection
+{Data Stores:}
+{MongoDB,  My\acr{SQL},  \acr{SQL} Server, Postgres\acr{SQL}, Redis, etc.}
+
+\vspace{0.5em}\inlineheadsection
+{Other:}
+{Certified as \emph{Emergency Medical Technician}, and \emph{Wilderness \acr{EMT}}; {FCC General License: \emph{\textbf{N7JHF}}}}
+
+%%--------------------------------------------------------------------------------------
+%%--------------------------------------------------------------------------------------
+\vspace{1em}\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Experience}
+
+	\headedsection
+	{\href{https://www.microsoft.com/en-us/}{Base2 Solutions: Consultant to Boeing, Zodiac, Amazon}}
+	{\textsc{Bellevue, WA}} {%
+		
+		\headedsubsection
+		{Advisory Software Engineer/Architect}
+		{Feb \apo18 -- Feb \apo22}
+		{}	
+	}
+	
+	\vspace*{1em}
+
+	\headedsection
+	{\href{https://www.microsoft.com/en-us/}{Microsoft -- Advanced Strategy and Research}}
+	{\textsc{Redmond, WA}} {%
+	
+		\headedsubsection
+		{Senior Software Development Engineer}
+		{Sep \apo06 -- Jun \apo14}
+		{}	
+	}
+		
+	\vspace*{1em}
+	
+	\headedsection
+	{\href{http://www.zoominfo.com/c/SozoTek-Inc/53446018}{SozoTek, Inc}}
+	{\textsc{Austin, TX}} {%
+		
+		\headedsubsection
+		{Director of Engineering}
+		{Mar \apo05 -- Sep \apo06}
+			
+	}
+
+	\vspace*{1em}
+	\headedsection
+	{\href{http://www.pervasive.com/}{Pervasive Software} (now a subsidiary of \href{https://www.actian.com/}{Actian)}}
+	{\textsc{Austin, TX}} {%
+				
+		\headedsubsection
+		{Principal Engineer}
+		{Dec \apo03 -- Feb \apo05}
+
+	}
+					
+	\vspace*{1em}
+	\headedsection
+	{\href{http://lyrasys.com}{LyraSys, Inc.}}
+	{\textsc{Austin, TX}} {%
+						
+		\headedsubsection
+		{Chief Technical Officer}
+		{Mar \apo99 -- Sep \apo01}
+
+	}
+						
+	\vspace*{1em}
+	\headedsection
+	{\href{http://www.linxdata.com/}{Linx Data Terminals, Inc.}}
+	{\textsc{Dallas, TX}} {%
+							
+		\headedsubsection
+		{Chief Architect}
+		{Sep \apo89 -- Feb \apo99}
+
+	}
+							
+	\vspace{-0.2em}
+	\begin{center}
+		\emph{\small Please refer to my \href{http://www.linkedin.com/in/jfogarty}{Linked-in profile} for a more complete list of work experiences along with recommendations.}
+	\end{center}
+
+%%--------------------------------------------------------------------------------------
+%%--------------------------------------------------------------------------------------
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+{\href{https://www.utexas.edu/}{University of Texas at Austin}}
+{\textsc{Austin, TX}} {%
+	\headedsubsection
+	{Mathematics, Computer Science}
+	{1988 -- 1990} {}
+}
+
+\headedsection
+{\href{http://www.rice.edu/}{Rice University}}
+{\textsc{Houston, TX}} {%
+	\headedsubsection
+	{Physics, Computer Science}
+	{1975 -- 1976} {}
+}
+
+
+%%--------------------------------------------------------------------------------------
+%%--------------------------------------------------------------------------------------
+%%--------------------------------------------------------------------------------------
+\vspace{1em}\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Interests}
+
+\inlineheadsection
+  {Non-exhaustive and in alphabetical order:}
+  {archaeology, artificial intelligence, caving, cognitive science, emergency medicine, genetics, high-angle rescue, mountaineering, neuroscience, open source and open publication, operating systems, protocols, sailing, scuba diving, software engineering, space travel.}
+
+
+\end{document}
+
+＀

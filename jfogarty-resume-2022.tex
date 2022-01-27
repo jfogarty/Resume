@@ -1,0 +1,245 @@
+%% ----------------------------------------------------------------------------
+%% LaTeX source of John Fogarty's Resume - MASTER LaTeX File
+%% ----------------------------------------------------------------------------
+% V0.17 - 12 Jan 2022
+% -----------------------------------------------------------------------------
+% John Fogarty - Web:http://www.jfogarty.org - Mail:johnhenryfogarty@gmail.com
+% -----------------------------------------------------------------------------
+% Heavily commented to to work for even LaTeX beginners (hopefully).
+% Forked from Cies Breijs' extremely useful https://github.com/cies/resume
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+% -----------------------------------------------------------------------------
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,letterpaper]{article}
+
+% Set the page margins.
+\usepackage[letterpaper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{./resume}
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{John H. Fogarty}{January 12, 2022}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:john.at.jfogarty.dot.org}{john\mbox{}@\mbox{}jfogarty.org}\sbull
+\textsmaller{+}1.512-589-5550\sbull
+% {\newnums cies010} \emph{(Skype)}\sbull
+\href{https://github.com/jfogarty}{github.com/jfogarty}
+\sbull
+\href{http://www.linkedin.com/in/jfogarty}{www.linkedin.com/in/jfogarty}
+\\
+Mailing Address: 14206 SE 10th Place\sbull
+Bellevue, WA\sbull
+98007
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+\vspace{-1.3em}  % some vertical spacing
+\begin{multicols}{2}  % open a multicolumn environment
+\noindent \emph{\textbf{Software Architect/Developer} with broad and deep skill sets, and a lifelong passion for learning; comfortable in anything: Python; Java; Node; C++, C\# and on anything embedded; OS; Services; Cloud; Apps --- Fearless to the point of stupidity.}
+\\
+\\
+In junior high I wrote my first code from a \textit{\acr{GE}} timesharing, library book; programs in hand, I tracked down the admin for the \textit{Burrough}'s mainframe in the Dallas school district and convinced him let me use their machine. Before finishing high school, I was doing compiler work on the \textit{\acr{UT} Health Science Center's \acr{DEC}system}, and had mastered a dozen languages across multiple systems.
+\\
+\\
+Attended Rice University on a full ticket National Merit Scholarship, but was appalled at the primitive \acr{IBM} mainframe in the \acr{CS} department, so switched to physics. My arrogance and youth led me to drop out to form my first company after the first year. Coupled with a hobbyist's skills in electronics, was soon developing embedded computers, operating systems, and communications protocols for \textit{Hewlett Packard}, \textit{AT\&T}, \textit{\acr{DEC}}, \textit{Azurdata}, in my next two startups.
+\\
+\\
+In my twenties, managed a staff of designers and engineers covering every aspect of manufacturing networked, industrial, computer systems. Traveled throughout Europe and Asia, both troubleshooting software/hardware, and handling the technical side of systems sales. Developed business plans, engineering and production budgets, and served on the boards of multiple small companies.
+\\
+\\
+For next few decades, alternated and interleaved deep technical work with the direction of teams and engineering departments. Whenever expanded management responsibilities have threatened to erode my skills, switched to roles demanding greater technical depth and commitment. Currently only interested in serious technical work.
+\end{multicols}
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Experience}
+
+\vspace*{1em}
+
+\headedsection
+{\href{https://base2s.com/}{Base2 Solutions}}
+{\textsc{Bellevue, WA}} {%
+	
+	\headedsubsection
+	{Advisory Software Engineer/Architect}
+	{Mar \apo18 -- Current}
+	{\bodytext{
+		Primary designer and developer of an embedded avionics operating system and control environment (Yocto Linux/PPC64, Java, C++) for a major new hardware line. Organizer and founder of Base2's Machine Learning Initiative; mentored engineers in ML technologies; built and taught ML curricula; implemented multiple demonstration projects, primarily using Machine Vision tools. Saved a key customer from disgrace by implementing significant upgrades to an aircraft interiors Android application suite under extreme time and resource pressures, leading to a successful trade show demonstration. Currently working on imaging sensor systems for autonomous delivery drones; mostly Python with a smattering of C++, bash scripting, etc; involves significant coding in robotic control, specialty device drivers, pub/sub and rq/rs networking, SystemD services, AWS Lambda functions, RDMS, IAM, and S3 data management.
+		These roles involve development under DO-178 safety critical SDLC standards.
+	}}
+}
+
+\vspace*{3em}
+\headedsection
+{\href{https://svslappey.wordpress.com/}{S/V Slappey II}}
+{\textsc{Bellevue, WA}} {%
+
+  \headedsubsection
+    {Captain}
+    {Jul \apo14 -- Jan \apo18}
+    {\bodytext{Sailed a small sailboat around the US and Mexico, while immersing myself in personal studies; this time in neuroscience, cognitive science, and artificial intelligence. In my spare time, tinker with a book on general \acr{AI}, ``\href{http://consideringthought.com/}{\textit{Considering Thought}},'' which I hope to publish before I perish.
+    }}
+}
+
+\newpage
+\vspace*{1em}
+\headedsection  % sets the header for a subsection and contains usually body text
+  {\href{https://www.microsoft.com/en-us/}{Microsoft -- Advanced Strategy and Research}}
+  {\textsc{Redmond, WA}} {%
+
+  \headedsubsection
+    {Senior Software Development Engineer}
+    {Mar \apo08 -- Jun \apo14}
+    {\bodytext{Core member of the team designing a \href{https://en.wikipedia.org/wiki/Midori_(operating_system)}{green field operating system} in a project led directly by \href{https://www.linkedin.com/in/ericrudder/}{Eric Rudder}. I designed and developed key elements of the application lifecycle --- more specifically, the network model for component discovery, distribution, and loading based on secure content graphs; the execution stack for process management; the build system for the entire \acr{OS}. Worked on the \acr{C\#}/\acr{M\#} compiler and debugger, capability and resources models, and various protocols.
+    }}
+    
+  \headedsubsection
+    {Lead Software Development Engineer}
+    {Sep \apo06 -- Mar \apo08}
+	{\bodytext{%
+	Started in the Windows Live/AdCenter group, integrating \acr{SMS} and email delivery into backend services. Created \acr{SQL} Server Reporting Services based content authoring and generation tools for ad campaign bidding, monitoring, and reporting. I'm proud that \href{https://www.linkedin.com/in/williamhgates/}{Bill Gates} once wrote that I was ``more articulate than he was,'' when commenting on a whitepaper I had written; rare praise from someone not known to give compliments lightly.
+	}}
+}
+
+\vspace*{1em}
+\headedsection
+  {\href{http://www.zoominfo.com/c/SozoTek-Inc/53446018}{SozoTek, Inc}}
+  {\textsc{Austin, TX}} {%
+
+  \headedsubsection
+    {Director of Engineering}
+    {Mar \apo05 -- Sep \apo06}
+    {\bodytext{
+    Hired directly by \href{https://www.linkedin.com/in/gailmredmond/}{Gail Redmond} and \href{https://www.linkedin.com/in/ralphgermer/}{Ralph Germer} to manage a dozen scientists, engineers, and technicians developing image processing, analysis and test technologies for this second round, mobile devices startup. Handled external contractors designing \acr{ASIC}s, \acr{PC} boards, and electromechanical systems, as well as an extensive patent portfolio. Personally developed \acr{GPU} versions of custom filters and transforms; psychometric test tools for image comparison metrics; a \acr{GUI} platform for running imaging tools; and significant work on the design of electromechanical/optical camera module test system. Assisted in direct negotiations with investors and major telco carriers.
+    }}
+}
+
+\vspace*{1em}
+\headedsection
+  {\href{http://www.pervasive.com/}{Pervasive Software} (now a subsidiary of \href{https://www.actian.com/}{Actian)}}
+  {\textsc{Austin, TX}} {%
+
+  \headedsubsection
+    {Principal Engineer}
+    {Dec \apo03 -- Feb \apo05}
+    {\bodytext{Managed the Pervasive Services stack team: we developed the underlying abstraction and services layer across all Pervasive products; this provided a kind of virtual \acr{OS}, supporting threading and process models, communications protocols, file and database access, with extensive \acr{i18n} support, and fully automated testing. I pioneered continuous integration and testing over many Linux, Unix, Windows, and legacy mainframe operating systems. Built the \acr{J2EE} Connection system for the \acr{ETL}, workflow, and dataflow engines controlling more than two hundred different database, filesystem, and application interfaces.
+    }}
+    
+  \headedsubsection
+    {Senior Lead Software Developer --- Data Junction}
+    {Mar \apo01 -- Dec \apo03}
+    {\bodytext{Managed the team that reengineered the \acr{ETL} product stack for \acr{IBM} mainframes and mid-sized systems. This technology was critical to the   
+    \href{https://web.archive.org/web/20040202055037/http://www.pervasive.com/company/press/releases_show.asp?cid=490}{acquisition of Data Junction by Pervasive}. 
+    Worked on various protocols, including the \acr{SOAP} and \acr{WSDL} implementations that enabled \href{https://www.salesforce.com}{Salesforce}'s \acr{API}s.
+    }}    
+}
+
+\vspace*{1em}
+\headedsection
+  {\href{http://lyrasys.com}{LyraSys, Inc.}}
+  {\textsc{Austin, TX}} {%
+
+  \headedsubsection
+    {Chief Technical Officer}
+    {Mar \apo99 -- Sep \apo01}
+    {\bodytext{Founder of mobile devices software startup. Designed and implemented a novel mobile applications/services architecture for the emerging \href{https://en.wikipedia.org/wiki/Wireless_Application_Protocol}{\acr{WAP}} phone market based on a \href{https://www.google.com/patents/US6311180}{dynamic adaptive display model}. Cratered and burned when the anticipated market failed to take off, and new money became unavailable; attempts to pivot ran aground against the \href{http://www.investopedia.com/features/crashes/crashes8.asp}{dotcom crash}.
+    }}
+}
+
+\vspace*{1em}
+\headedsection
+  {\href{http://www.linxdata.com/}{Linx Data Terminals, Inc.}}
+  {\textsc{Dallas, TX}} {%
+
+  \headedsubsection
+    {Chief Architect}
+    {Sep \apo89 -- Feb \apo99}
+    {\bodytext{Handled all technical and business aspects of product design and development for a line of networked industrial computers. Personally developed operating systems, language compilers, drivers (including a full \acr{TCP}/\acr{IP} protocol stack), applications, and support services across a range of processors and embedded devices. Designed and managed hardware from \acr{PCB} and \acr{FPGA} design to packaging and test procedures. Founder, officer, and board member of this niche market company, which grew from a handful of people to one with monthly revenues in the millions, shipping and installing products worldwide.
+    }}
+}
+
+\vspace{-0.2em}
+\begin{center}
+  \emph{\small Please refer to my \href{http://www.linkedin.com/in/jfogarty}{Linked-in profile} for a more complete list of work experiences along with recommendations.}
+\end{center}
+
+\newpage
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+  {\href{https://www.utexas.edu/}{University of Texas at Austin}}
+  {\textsc{Austin, TX}} {%
+  \headedsubsection
+    {Mathematics, Computer Science}
+    {1988 -- 1990} {}
+}
+
+\headedsection
+  {\href{http://www.rice.edu/}{Rice University}}
+  {\textsc{Houston, TX}} {%
+  \headedsubsection
+    {Physics, Computer Science}
+    {1975 -- 1976} {}
+}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Skills}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Technical expertise:}
+  {Software design, management, and implementation, both within and across teams; emphasis on agile methodologies, continuous build/deployment/testing/integration.  
+  Proficient in C++, Python, Java, Node, and C\#, and others now forgotten --- including (but not limited to) 
+  Ada, Algol, \acr{APL}\small{(with the scars to prove it)}, \acr{AWK}, Basic, \acr{ESPOL}, Excel, Forth, Fortran, GO, \acr{JOVIAL}, \acr{JCL}, Ladder logic, \LaTeX, Lisp, Lua, M\#, make, \acr{MATLAB}, Modula, Pascal, Perl, \acr{PL/1}, \acr{PL/M}, Prolog, R, Ruby, \acr{SAIL}, \acr{SNOBOL}, \acr{TECO}, and \acr{VHDL}, as well as dozens of assemblers.
+  Solid knowledge of various web technologies:\ \acr{HTML+CSS}, \acr{XML}, Node.js, \acr{REST}, \acr{SOAP} and JavaScript.
+  Linux, Windows, AWS, and VM administration skills: Bash, batch, Apache, \acr{SQL} Server, Postgre\acr{SQL}, MongoDB, \acr{IAM}, \acr{s3}, VirtualBox, \acr{VM}ware, \acr{Hypervisor}.}
+
+\vspace{0.5em}
+\inlineheadsection
+  {Natural languages:}
+  {Engish \emph{(native tongue)}, Spanish \emph{(limited proficiency)}, Japanese \emph{(beginner)}.}
+
+\vspace{0.5em}
+\inlineheadsection
+  {Other:}
+  {Certified as \emph{Emergency Medical Technician}, and \emph{Wilderness \acr{EMT}}.}
+
+\spacedhrule{1.6em}{-0.4em}
+
+\roottitle{Interests}
+
+\inlineheadsection
+  {Non-exhaustive and in alphabetical order:}
+  {archaeology, artificial intelligence, caving, cognitive science, emergency medicine, genetics, high-angle rescue, mountaineering, neuroscience, open source and open publication, operating systems, protocols, sailing, scuba diving, software engineering, space travel.}
+
+
+\end{document}
+
+＀
