@@ -1,7 +1,7 @@
 %% ----------------------------------------------------------------------------
 %% LaTeX source of John Fogarty's Resume - MASTER LaTeX File
 %% ----------------------------------------------------------------------------
-% V0.16 - 12 Dec 2021
+% V1.00 - 10 Sep 2024
 % -----------------------------------------------------------------------------
 % John Fogarty - Web:http://www.jfogarty.org - Mail:johnhenryfogarty@gmail.com
 % -----------------------------------------------------------------------------
@@ -31,7 +31,7 @@
 
 
 % title on top of the document
-\maintitle{John H. Fogarty}{December 12, 2021}{Last update on \today}
+\maintitle{John H. Fogarty}{January 12, 2024}{Last update on \today}
 
 \nobreakvspace{0.3em}  % add some page break averse vertical spacing
 
@@ -47,9 +47,9 @@
 \sbull
 \href{http://www.linkedin.com/in/jfogarty}{www.linkedin.com/in/jfogarty}
 \\
-Mailing Address: 14206 SE 10th Place\sbull
-Bellevue, WA\sbull
-98007
+Mailing Address: 6619 Milano Court SE\sbull
+Lacey, WA\sbull
+98513
 
 \spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
 
@@ -69,9 +69,7 @@ Attended Rice University on a full ticket National Merit Scholarship, but was ap
 In my twenties, managed a staff of designers and engineers covering every aspect of manufacturing networked, industrial, computer systems. Traveled throughout Europe and Asia, both troubleshooting software/hardware, and handling the technical side of systems sales. Developed business plans, engineering and production budgets, and served on the boards of multiple small companies.
 \\
 \\
-For next few decades, alternated and interleaved deep technical work with the direction of teams and engineering departments. Whenever expanded management responsibilities have threatened to erode my skills, switched to roles demanding greater technical depth and commitment. Currently only interested in serious technical work.
-\\
-\\
+For next few decades, alternated and interleaved deep technical work with the direction of teams and engineering departments. Whenever expanded management responsibilities have threatened to erode my skills, switched to roles demanding greater technical depth and commitment. After building up the retirement kitty at Amazon Prime Air, I've now retired to a life of leisure and decay.
 \end{multicols}
 
 
@@ -82,19 +80,35 @@ For next few decades, alternated and interleaved deep technical work with the di
 \vspace*{1em}
 
 \headedsection
+{\href{https://amazon.com/}{Amazon Prime Air}}
+{\textsc{Seattle, WA}} {%
+	
+	\headedsubsection
+	{Senior Software Development Engineer}
+	{Feb \apo22 -- Mar \apo24}
+	{\bodytext{
+			Developed imaging sensor drivers, diagnostics, and control systems for Prime Air's autonomous delivery drones.
+			This work included kernel level development in C, as well as extensive code in C++, Python, bash scripting, etc.
+			There was significant coding in robotic control, pub/sub and rq/rs networking, SystemD services, AWS Lambda functions, RDMS, IAM, and S3 data management.
+			The avionics work involved development under DO-178 safety critical SDLC standards (DAL-D).
+	}}
+}
+
+\vspace*{2em}
+
+\headedsection
 {\href{https://base2s.com/}{Base2 Solutions}}
 {\textsc{Bellevue, WA}} {%
 	
 	\headedsubsection
 	{Advisory Software Engineer/Architect}
-	{Mar \apo18 -- Current}
+	{Mar \apo18 -- Feb \apo22}
 	{\bodytext{
-		Primary designer and developer of an embedded avionics operating system and control environment (Yocto Linux/PPC64, Java, C++) for a major new hardware line. Organizer and founder of Base2's Machine Learning Initiative; mentored engineers in ML technologies; built and taught ML curricula; implemented multiple demonstration projects, primarily using Machine Vision tools. Saved a key customer from disgrace by implementing significant upgrades to an aircraft interiors Android application suite under extreme time and resource pressures, leading to a successful trade show demonstration. Currently working on imaging sensor systems for autonomous delivery drones; mostly Python with a smattering of C++, bash scripting, etc; involves significant coding in robotic control, specialty device drivers, pub/sub and rq/rs networking, SystemD services, AWS Lambda functions, RDMS, IAM, and S3 data management.
-		These roles involve development under DO-178 safety critical SDLC standards.
+		Primary designer and developer of an embedded avionics operating system and control environment (Yocto Linux/PPC64, Java, C++) for a major new hardware line. Organizer and founder of Base2's Machine Learning Initiative; mentored engineers in ML technologies; built and taught ML curricula; implemented multiple demonstration projects, primarily using Machine Vision tools. Saved a key customer from disgrace by implementing significant upgrades to an aircraft interiors Android application suite under extreme time and resource pressures, leading to a successful trade show demonstration.
 	}}
 }
 
-\vspace*{3em}
+\vspace*{2em}
 \headedsection
 {\href{https://svslappey.wordpress.com/}{S/V Slappey II}}
 {\textsc{Bellevue, WA}} {%
